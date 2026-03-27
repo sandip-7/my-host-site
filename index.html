@@ -1,9 +1,3 @@
-
-
-
-
-
-        
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +53,7 @@ nav{
   background:radial-gradient(ellipse at 70% 50%, rgba(193,113,79,0.3) 0%, transparent 60%);
 }
 .avatar-ring{
-  width:130px;height:130px;border-radius:50%;
+  width:130px;height:120px;border-radius:50%;
   background:linear-gradient(135deg,var(--terra),var(--terra-light));
   display:flex;align-items:center;justify-content:center;
   margin:0 auto 1.5rem;
@@ -69,6 +63,13 @@ nav{
   position:relative;z-index:1;
 }
 .hero h1{
+  font-family:var(--serif);
+  font-size:clamp(2rem,4vw,3rem);
+  font-weight:700;
+  margin-bottom:0.6rem;
+  position:relative;z-index:1;
+}
+  .hero h2{
   font-family:var(--serif);
   font-size:clamp(2rem,4vw,3rem);
   font-weight:700;
@@ -226,8 +227,12 @@ footer strong{color:var(--terra-light);}
 
 <!-- HERO -->
 <div class="hero">
-  <div class="avatar-ring">BSP</div>
+  <div class="avatar-ring" id="avatar-ring">
+  <img src="me.jpg" alt="Bishwanath Sharma Poudel" style="width:200%;height:200%;object-fit:cover;border-radius:50%;"/>
+</div>
+
   <h1>Bishwanath Sharma Poudel</h1>
+  <h2>Sandip Poudel</h2>
   <p class="hero-role">QA Engineer &nbsp;|&nbsp; DevOps Enthusiast &nbsp;|&nbsp; Kathmandu, Nepal</p>
   <div class="hero-chips">
     <span class="chip">Test Automation</span>
@@ -238,9 +243,9 @@ footer strong{color:var(--terra-light);}
     <span class="chip">Kubernetes</span>
   </div>
   <div class="hero-stats">
-    <div><div class="hero-stat-val">2+</div><div class="hero-stat-lbl">Years Exp.</div></div>
-    <div><div class="hero-stat-val">4+</div><div class="hero-stat-lbl">Portfolio Items</div></div>
-    <div><div class="hero-stat-val">30%</div><div class="hero-stat-lbl">Perf. Gain</div></div>
+    <div><div class="hero-stat-val">3+</div><div class="hero-stat-lbl">Years Exp.</div></div>
+    <div><div class="hero-stat-val">6+</div><div class="hero-stat-lbl">Portfolio Items</div></div>
+    <div><div class="hero-stat-val">50%</div><div class="hero-stat-lbl">Perf. Gain</div></div>
   </div>
 </div>
 
@@ -253,7 +258,7 @@ footer strong{color:var(--terra-light);}
     <div>
       <h2 class="sec-title">Dedicated to quality, driven by precision.</h2>
       <p class="about-bio">I'm a dedicated QA and DevOps Engineer with hands-on experience in ensuring software quality and maintaining CI/CD pipelines. I specialize in test automation, performance testing, and infrastructure deployment, with a strong focus on delivering reliable and scalable systems.</p>
-      <p class="about-bio">With 2+ years of experience in automation, manual testing, and DevOps practices, I bridge the gap between development and operations — making sure every release is fast, stable, and production-ready.</p>
+      <p class="about-bio">With 3+ years of experience in automation, manual testing, and DevOps practices, I bridge the gap between development and operations — making sure every release is fast, stable, and production-ready.</p>
       <div class="skills-grid">
         <span class="skill-pill">Selenium</span>
         <span class="skill-pill">TestNG</span>
@@ -377,8 +382,20 @@ footer strong{color:var(--terra-light);}
         <div class="proj-sub"><span>Implementation</span><span>Government</span><span>Hosting</span></div>
       </div>
     </div>
-    <div class="project-item">
+      <div class="project-item">
       <div class="proj-num">04</div>
+      <div>
+        <div class="proj-title">E-Token</div>
+        <div class="proj-desc">Implementation E-Token software for reduce cost and time, streamline operations for Once dispatches .</div>
+        <div class="proj-sub"><span>Implementation</span><span>Hosting</span></div>
+      </div>
+
+
+
+
+    </div>
+    <div class="project-item">
+      <div class="proj-num">05</div>
       <div>
         <div class="proj-title">Government Software Suite</div>
         <div class="proj-desc">QA support and system engineering for a local-government digital platform covering multiple citizen services.</div>
@@ -408,7 +425,7 @@ footer strong{color:var(--terra-light);}
       <div class="contact-links">
         <div class="contact-row">
           <div class="contact-icon">✉️</div>
-          <span>Email Me</span>
+          <span><a href="mailto:bishwanathsharmapoudel@gmail.com">Email Me</a></span>
         </div>
         <div class="contact-row">
           <div class="contact-icon">📞</div>
@@ -416,11 +433,11 @@ footer strong{color:var(--terra-light);}
         </div>
         <div class="contact-row">
           <div class="contact-icon">🐙</div>
-          <span>View GitHub Profile</span>
+          <span><a href="https://github.com/sandip-7" target="_blank">View GitHub Profile</a></span>
         </div>
         <div class="contact-row">
           <div class="contact-icon">💼</div>
-          <span>View LinkedIn Profile</span>
+          <span><a href="https://www.linkedin.com/in/bishwanath-sharma-poudel-92ab80177/" target="_blank">View LinkedIn Profile</span></a>
         </div>
         <div class="contact-row">
           <div class="contact-icon">📍</div>
@@ -458,7 +475,3 @@ footer strong{color:var(--terra-light);}
 
 </body>
 </html>
-
-
-
-        
